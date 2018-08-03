@@ -1,0 +1,16 @@
+VERSION=1.1.0
+PACKAGE=package
+REQUIRES_SERVICES=nginx
+PROVIDES_SERVICES=package-services
+REQUIRES_PACKAGES=dependency-package
+REPLACES_PACKAGES=old-package
+# Variables
+# RPM_ROOT - root directory for rpm
+# POST_INSTALL - post-install script file
+# PRE_UNINSTALL - pre-uninstall scrpit file
+
+include ../.packaging/rpm.mk
+
+#clean-temp::
+#rpm-prepare::
+#rpm-post-init::
